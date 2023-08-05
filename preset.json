@@ -1,0 +1,19 @@
+{
+  "idolypride": {
+    "assets": "./idolypride",
+    "templates": [
+      {
+        "type": "Training",
+        "desc": "自主訓練收穫"
+      },
+      {
+        "type": "Awards",
+        "desc": "领取奖励"
+      },
+      {
+        "type": "Psychube",
+        "desc": "每日心相（意志解析）"
+      }   
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "adb": "adb.exe",
+  "address": "127.0.0.1:5555",
+  "game": "idolypride",
+  "tasks": {
+    "idolypride": [
+      {
+        "name": "Task 0",
+        "enable": true,
+        "type": "Training",
+        "desc": "自主訓練收穫"
+      },
+      {
+        "name": "Task 1",
+        "enable": false,
+        "type": "Awards",
+        "desc": "領取禮物箱"
+      },
+      {
+        "name": "Task 2",
+        "enable": false,
+        "type": "Psychube",
+        "desc": "日程表（每日獎勵）"
+      },
+      {
+        "name": "Task 3",
+        "enable": false,
+        "type": "Rest",
+        "desc": "休息(回體)"
+      },
+      {
+        "name": "Task 4",
+        "enable": false,
+        "type": "Work",
+        "desc": "工作(粉絲UP)"
+      },
+      {
+        "name": "Task 5",
+        "enable": false,
+        "type": "Fans",
+        "desc": "粉絲活動(轉化率UP)"
+      },
+      {
+        "name": "Task 15",
+        "enable": false,
+        "type": "Combat",
+        "desc": "暫未開發",
+        "param": {
+          "diff_task": {
+            "EnterTheShow": {
+              "next": "PromotionChapter_BW"
+            },
+            "TargetStageName": {
+              "text": "06"
+            },
+            "StageDifficulty": {
+              "next": "StageDifficulty_None"
+            },
+            "SetReplaysTimes": {
+              "text": "1"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

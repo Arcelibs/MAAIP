@@ -1,0 +1,22 @@
+{
+	"Training": {
+		"next": [
+			"Tap"
+		]
+	},
+
+	"Tap": {
+		"recognition": "TemplateMatch",
+		"template": "template/Training/Tap.png",
+		"action": "Click",
+		"next": [
+			"TapExit"
+		]
+	},
+	
+	"TapExit": {
+		"recognition": "TemplateMatch",
+		"template": "template/Training/TapExit.png",
+		"action": "Click"
+	}
+}

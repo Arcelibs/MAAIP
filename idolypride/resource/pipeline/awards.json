@@ -1,5 +1,5 @@
 {
-	"awards": {
+	"Awards": {
 		"next": [
 			"Gift"
 		]
@@ -15,9 +15,19 @@
 		]
 	},
 	
+	
 	"GetGift": {
 		"recognition": "TemplateMatch",
 		"template": "template/awards/GetGift.png",
+		"action": "Click",
+		"next": [
+			"TapExit"
+		]
+	},
+	
+	"TapExit": {
+		"recognition": "TemplateMatch",
+		"template": "template/awards/TapExit.png",
 		"action": "Click",
 		"next": [
 			"GiftExit"
@@ -27,6 +37,12 @@
 	"GiftExit": {
 		"recognition": "TemplateMatch",
 		"template": "template/awards/GiftExit.png",
+		"roi": [
+			238,
+			1133,
+			164,
+			147
+		],
 		"action": "Click"
 	}
 }

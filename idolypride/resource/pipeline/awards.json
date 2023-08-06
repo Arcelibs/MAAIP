@@ -1,0 +1,33 @@
+{
+	"awards": {
+		"next": [
+			"Gift"
+		]
+	},
+	
+	"Gift": {
+		"recognition": "TemplateMatch",
+		"template": "template/awards/Gift.png",
+		"action": "Click",
+		"next": [
+			"GetGift",
+			"GiftExit"
+		]
+	},
+	
+	"GetGift": {
+		"recognition": "TemplateMatch",
+		"template": "template/awards/GetGift.png",
+		"action": "Click",
+		"next": [
+			"GiftExit"
+		]
+	},
+	
+	"GiftExit": {
+		"recognition": "TemplateMatch",
+		"template": "template/awards/GiftExit.png",
+		"action": "Click"
+	}
+}
+	

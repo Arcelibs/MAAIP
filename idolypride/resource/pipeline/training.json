@@ -1,13 +1,32 @@
 {
 	"Training": {
 		"next": [
-			"Tap"
+			"Tap",
+			"TapMax"
 		]
 	},
 
 	"Tap": {
 		"recognition": "TemplateMatch",
 		"template": "template/Training/Tap.png",
+		"action": "Click",
+		"next": [
+			"TapFree"
+		]
+	},
+
+	"TapMax": {
+		"recognition": "TemplateMatch",
+		"template": "template/Training/TapMax.png",
+		"action": "Click",
+		"next": [
+			"TapFree"
+		]
+	},
+	
+	"TapFree": {
+		"recognition": "TemplateMatch",
+		"template": "template/Training/TapFree.png",
 		"action": "Click",
 		"next": [
 			"TapExit"

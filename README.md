@@ -24,4 +24,4 @@ neko-para佬的MaaCommonJS
 
 ## 如何加工
 
-**建議加入QQ 群：649344857即可**
+

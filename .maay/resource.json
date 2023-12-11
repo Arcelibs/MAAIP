@@ -1,0 +1,16 @@
+{
+  "resource": {
+    "default": {
+      "name": "アイプラ",
+      "path": "@default"
+    }
+  },
+  "app": {
+    "start": "game.qualiarts.idolypride/com.google.firebase.MessagingUnityPlayerActivity",
+    "stop": "game.qualiarts.idolypride",
+    "orientation": "portrait",
+    "size": {
+      "short": 720
+    }
+  }
+}

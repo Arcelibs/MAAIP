@@ -1,0 +1,39 @@
+{
+  "option": {
+    "collectAwards": {
+      "name": "自動收取獎勵",
+      "default": false,
+      "type": "checkbox",
+      "inject": ["AwardsCollection.enabled"]
+    },
+    "collectTrainingResults": {
+      "name": "自動收取訓練結果",
+      "default": false,
+      "type": "checkbox",
+      "inject": ["TrainingResultsCollection.enabled"]
+    },
+    "performDailyWork": {
+      "name": "執行日常作業",
+      "default": false,
+      "type": "checkbox",
+      "inject": ["DailyWorkExecution.enabled"]
+    }
+  },
+  "entry": [
+    {
+      "name": "自動收取獎勵任務",
+      "task": "awards",
+      "option": ["collectAwards"]
+    },
+    {
+      "name": "收取訓練結果任務",
+      "task": "training",
+      "option": ["collectTrainingResults"]
+    },
+    {
+      "name": "日常作業執行任務",
+      "task": "work",
+      "option": ["performDailyWork"]
+    }
+  ]
+}

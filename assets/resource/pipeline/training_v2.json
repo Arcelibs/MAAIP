@@ -1,0 +1,41 @@
+{
+	"training": {
+		"next": [
+			"Tap",
+			"TapMax"
+		]
+	},
+	
+	"TapFree": {
+		"recognition": "TemplateMatch",
+		"template": "training/TapFree.png",
+		"action": "Click",
+		"next": [
+			"TapExit_training"
+		]
+	},
+
+	"Tap": {
+		"recognition": "TemplateMatch",
+		"template": "training/Tap.png",
+		"action": "Click",
+		"next": [
+			"TapFree"
+		]
+	},
+
+	"TapMax": {
+		"recognition": "TemplateMatch",
+		"template": "training/TapMax.png",
+		"action": "Click",
+		"next": [
+			"TapFree"
+		]
+	},
+	
+	"TapExit_training": {
+		"recognition": "TemplateMatch",
+		"template": "training/TapExit.png",
+		"action": "Click"
+	}
+}

@@ -1,0 +1,71 @@
+{
+	"awards": {
+		"next": [
+			"Gift"
+		]
+	},
+	
+	"Gift": {
+		"recognition": "TemplateMatch",
+		"template": "awards/Gift.png",
+		"action": "Click",
+		"post_wait_freezes": 1,
+		"next": [
+			"GetGift",
+			"GiftExit"
+		]
+	},
+	
+	
+	"GetGift": {
+		"recognition": "TemplateMatch",
+		"template": "awards/GetGift.png",
+		"roi": [
+			531,
+			1040,
+			168,
+			195
+		],
+		"action": "Click",
+		"next": [
+			"GetGiftExit"
+		]
+	},
+	
+	"GetGiftExit": {
+		"recognition": "TemplateMatch",
+		"template": "awards/GetGiftExit.png",
+		"roi": [
+			286,
+			1120,
+			153,
+			159
+		],
+		"action": "Click",
+		"next": [
+			"GiftExit"
+		]
+	},
+	
+	"TapExit_awards": {
+		"recognition": "TemplateMatch",
+		"template": "awards/TapExit.png",
+		"action": "Click",
+		"next": [
+			"GiftExit"
+		]
+	},
+	
+	"GiftExit": {
+		"recognition": "TemplateMatch",
+		"template": "awards/GiftExit.png",
+		"roi": [
+			238,
+			1133,
+			164,
+			147
+		],
+		"action": "Click"
+	}
+}
+	

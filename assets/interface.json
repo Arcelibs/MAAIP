@@ -36,6 +36,7 @@
             "option": [
                 "循環次數"
             ],
+            "repeatable": true,
             "doc": "爬主塔不論成功失敗都算1次"
         }
     ],
@@ -60,18 +61,6 @@
                         "UserSetSliderValue": {
                             "enabled": true,
                             "expected": "^3$"
-                        },
-                        "exitAutoSweepBattleTask": {
-                            "enabled": true
-                        }
-                    }
-                },
-                {
-                    "name": "x5",
-                    "pipeline_override": {
-                        "UserSetSliderValue": {
-                            "enabled": true,
-                            "expected": "^5$"
                         },
                         "exitAutoSweepBattleTask": {
                             "enabled": true

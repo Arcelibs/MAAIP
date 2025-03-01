@@ -3,16 +3,16 @@
         "recognition": "TemplateMatch",
         "template": "performance.png",
         "action": "Click",
-        "pre_delay": 500,
-        "post_delay": 500,
+        "pre_delay": 2000,
+        "post_delay": 2000,
         "next": "clickVenusTower"
     },
     "clickVenusTower": {
         "recognition": "TemplateMatch",
         "template": "venus_tower.png",
         "action": "Click",
-        "pre_delay": 500,
-        "post_delay": 500,
+        "pre_delay": 2000,
+        "post_delay": 2000,
         "next": [
             "clickVenusMain"
         ]
@@ -21,8 +21,8 @@
         "recognition": "TemplateMatch",
         "template": "venus_main.png",
         "action": "Click",
-        "pre_delay": 500,
-        "post_delay": 500,
+        "pre_delay": 2000,
+        "post_delay": 2000,
         "next": [
             "clickAgree"
         ]
@@ -31,8 +31,8 @@
         "recognition": "TemplateMatch",
         "template": "agree.png",
         "action": "Click",
-        "pre_delay": 500,
-        "post_delay": 1500,
+        "pre_delay": 2000,
+        "post_delay": 2000,
         "next": [
             "checkAutoteam",
             "start_venus_main"
@@ -42,8 +42,8 @@
         "recognition": "TemplateMatch",
         "template": "autoteam.png",
         "action": "Click",
-        "pre_delay": 500,
-        "post_delay": 1500,
+        "pre_delay": 2000,
+        "post_delay": 2000,
         "next": [
             "start_venus_main"
         ]
@@ -51,7 +51,7 @@
     "start_venus_main": {
         "recognition": "TemplateMatch",
         "template": "start.png",
-        "pre_delay": 500,
+        "pre_delay": 2000,
         "post_delay": 2000,
         "action": "Click",
         "interrupt": [
@@ -65,7 +65,7 @@
     "download_check": {
         "recognition": "TemplateMatch",
         "template": "download_check.png",
-        "pre_delay": 500,
+        "pre_delay": 2000,
         "post_delay": 2000,
         "action": "Click",
         "interrupt": [

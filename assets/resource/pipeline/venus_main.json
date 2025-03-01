@@ -1,0 +1,128 @@
+{
+    "clickPerformance": {
+        "recognition": "TemplateMatch",
+        "template": "performance.png",
+        "action": "Click",
+        "pre_delay": 500,
+        "post_delay": 500,
+        "next": "clickVenusTower"
+    },
+    "clickVenusTower": {
+        "recognition": "TemplateMatch",
+        "template": "venus_tower.png",
+        "action": "Click",
+        "pre_delay": 500,
+        "post_delay": 500,
+        "next": [
+            "clickVenusMain"
+        ]
+    },
+    "clickVenusMain": {
+        "recognition": "TemplateMatch",
+        "template": "venus_main.png",
+        "action": "Click",
+        "pre_delay": 500,
+        "post_delay": 500,
+        "next": [
+            "clickAgree"
+        ]
+    },
+    "clickAgree": {
+        "recognition": "TemplateMatch",
+        "template": "agree.png",
+        "action": "Click",
+        "pre_delay": 500,
+        "post_delay": 1500,
+        "next": [
+            "checkAutoteam",
+            "start_venus_main"
+        ]
+    },
+    "checkAutoteam": {
+        "recognition": "TemplateMatch",
+        "template": "autoteam.png",
+        "action": "Click",
+        "pre_delay": 500,
+        "post_delay": 1500,
+        "next": [
+            "start_venus_main"
+        ]
+    },
+    "start_venus_main": {
+        "recognition": "TemplateMatch",
+        "template": "start.png",
+        "pre_delay": 500,
+        "post_delay": 2000,
+        "action": "Click",
+        "interrupt": [
+            "stack1"
+        ],
+        "next": [
+            "download_check",
+            "next_toend"
+        ]
+    },
+    "download_check": {
+        "recognition": "TemplateMatch",
+        "template": "download_check.png",
+        "pre_delay": 500,
+        "post_delay": 2000,
+        "action": "Click",
+        "interrupt": [
+            "stack1"
+        ],
+        "next": [
+            "next_toend"
+        ]
+    },
+    "stack1": {
+        "post_delay": 1000
+    },
+    "next_toend": {
+        "recognition": "TemplateMatch",
+        "template": "next.png",
+        "pre_delay": 2000,
+        "post_delay": 2000,
+        "action": "Click",
+        "next": [
+            "toend_x"
+        ]
+    },
+    "toend_x": {
+        "recognition": "TemplateMatch",
+        "template": "x.png",
+        "pre_delay": 2000,
+        "post_delay": 2000,
+        "action": "Click",
+        "next": [
+            "toend_x_2"
+        ]
+    },
+    "toend_x_2": {
+        "recognition": "TemplateMatch",
+        "template": "x.png",
+        "pre_delay": 2000,
+        "post_delay": 2000,
+        "action": "Click",
+        "next": [
+            "x_toend"
+        ]
+    },
+    "x_toend": {
+        "recognition": "TemplateMatch",
+        "template": "end.png",
+        "pre_delay": 500,
+        "post_delay": 500,
+        "action": "Click",
+        "next": [
+            "to_home"
+        ]
+    },
+    "to_home": {
+        "recognition": "TemplateMatch",
+        "template": "home.png",
+        "pre_delay": 1000,
+        "post_delay": 1000,
+        "action": "Click"
+    }
+}

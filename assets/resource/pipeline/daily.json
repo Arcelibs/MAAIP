@@ -1,0 +1,46 @@
+{
+    "Click_daily": {
+        "doc": "點擊每日任務,優先檢查max再檢查tap",
+        "next": [
+            "Click_MAX",
+            "Click_tap"
+        ]
+    },
+    "Click_MAX": {
+        "doc": "點擊MAX",
+        "recognition": "TemplateMatch",
+        "template": "max.png",
+        "action": "Click",
+        "next": [
+            "Check_free2hour",
+            "Click_x"
+        ]
+    },
+    "Click_tap": {
+        "doc": "點選tap",
+        "recognition": "TemplateMatch",
+        "template": "tap.png",
+        "action": "Click",
+        "next": [
+            "Check_free2hour",
+            "Click_x"
+        ]
+    },
+    "Check_free2hour": {
+        "doc": "領取免費2小時收益",
+        "recognition": "TemplateMatch",
+        "template": "free2hour.png",
+        "action": "Click",
+        "next": "Click_x"
+    },
+    "Click_x": {
+        "doc": "點X",
+        "recognition": "TemplateMatch",
+        "action": "Click",
+        "template": "x.png"
+    },
+    "final": {
+        "doc": "結束",
+        "action": "DoNothing"
+    }
+}

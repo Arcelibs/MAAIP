@@ -3,68 +3,77 @@
         {
             "name": "安卓端",
             "type": "Adb"
-        },
-        {
-            "name": "桌面端",
-            "type": "Win32",
-            "win32": {
-                "class_regex": ".*",
-                "window_regex": "Visual Studio"
-            }
         }
     ],
     "resource": [
         {
-            "name": "官服",
+            "name": "JP",
             "path": [
                 "{PROJECT_DIR}/resource"
             ]
         },
         {
-            "name": "B 服",
+            "name": "TW",
             "path": [
                 "{PROJECT_DIR}/resource",
                 "{PROJECT_DIR}/resource_bilibili"
             ]
         }
     ],
+    "name": "MAAIP自動化助手",
+    "custom_title": "2025-03",
+    "url": "https://github.com/Arcelibs/MAAIP",
+    "mirrorchyan_rid": "MAAIP",
     "task": [
         {
-            "name": "普通任务",
-            "entry": "MyTask1"
+            "name": "收訓練成果",
+            "entry": "Click_tap"
         },
         {
-            "name": "选项任务",
-            "entry": "MyTask2",
+            "name": "爬VENUS主塔",
+            "entry": "clickPerformance",
             "option": [
-                "任务选项1"
-            ]
-        },
-        {
-            "name": "参数任务",
-            "entry": "MyTask3",
-            "option": [
-                "任务选项1"
+                "循環次數"
             ],
-            "pipeline_override": {}
+            "doc": "爬主塔不論成功失敗都算1次"
         }
     ],
     "option": {
-        "任务选项1": {
+        "循環次數": {
             "cases": [
                 {
-                    "name": "文本1",
+                    "name": "x1",
                     "pipeline_override": {
-                        "OcrTask": {
-                            "text": "文本1"
+                        "UserSetSliderValue": {
+                            "enabled": true,
+                            "expected": "^1$"
+                        },
+                        "exitAutoSweepBattleTask": {
+                            "enabled": true
                         }
                     }
                 },
                 {
-                    "name": "文本2",
+                    "name": "x3",
                     "pipeline_override": {
-                        "OcrTask": {
-                            "text": "文本2"
+                        "UserSetSliderValue": {
+                            "enabled": true,
+                            "expected": "^3$"
+                        },
+                        "exitAutoSweepBattleTask": {
+                            "enabled": true
+                        }
+                    }
+                },
+                {
+                    "name": "x5",
+                    "pipeline_override": {
+                        "UserSetSliderValue": {
+                            "enabled": true,
+                            "expected": "^5$"
+                        },
+                        "exitAutoSweepBattleTask": {
+                            "enabled": true
                         }
                     }
                 }

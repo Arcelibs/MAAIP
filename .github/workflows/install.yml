@@ -91,37 +91,6 @@ jobs:
           name: MAAIP-win-${{ matrix.arch }}
           path: "install"
 
-  
-    needs: meta
-    runs-on: macos-latest
-    strategy:
-      matrix:
-        arch: [aarch64, x86_64]
-      fail-fast: false
-
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          submodules: true
-
-      - name: Download MaaFramework
-        uses: robinraju/release-downloader@v1
-        with:
-          repository: MaaXYZ/MaaFramework
-          fileName: "MAA-android-${{ matrix.arch }}*"
-          latest: true
-          out-file-path: "deps"
-          extract: true
-
-      - name: Install
-        shell: bash
-        run: |
-          python ./install.py ${{ needs.meta.outputs.tag }}
-
-      - uses: actions/upload-artifact@v4
-        with:
-          name: MAAIP-android-${{ matrix.arch }}
-          path: "install"
 
   release:
     if: ${{ needs.meta.outputs.is_release == 'true' }}

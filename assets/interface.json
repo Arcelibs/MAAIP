@@ -6,6 +6,11 @@
         }
     ],
     "resource": [
+        "name": "MAAIP自動化助手",
+        "version": "2025-03-01",
+        "url": "https://github.com/Arcelibs/MAAIP",
+        "custom_title": "MAAIP",
+        "mirrorchyan_rid": "MAAIP",
         {
             "name": "JP",
             "path": [
@@ -20,22 +25,15 @@
             ]
         }
     ],
-    "name": "MAAIP自動化助手",
-    "custom_title": "2025-03",
-    "url": "https://github.com/Arcelibs/MAAIP",
-    "mirrorchyan_rid": "MAAIP",
     "task": [
         {
             "name": "收訓練成果",
             "entry": "Click_daily",
-            "doc": "收訓練成果"
+            "doc": "收訓練成果(有MAX就點MAX,沒有就點tap)"
         },
         {
             "name": "爬VENUS主塔",
             "entry": "clickPerformance",
-            "option": [
-                "循環次數"
-            ],
             "repeatable": true,
             "doc": "爬主塔不論成功失敗都算1次"
         }

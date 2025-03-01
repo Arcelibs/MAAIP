@@ -1,4 +1,8 @@
 {
+    "name": "MAAIP自動化助手",
+    "version": "2025-03-01",
+    "url": "https://github.com/Arcelibs/MAAIP",
+    "custom_title": "MAAIP",
     "controller": [
         {
             "name": "安卓端",
@@ -6,11 +10,6 @@
         }
     ],
     "resource": [
-        "name": "MAAIP自動化助手",
-        "version": "2025-03-01",
-        "url": "https://github.com/Arcelibs/MAAIP",
-        "custom_title": "MAAIP",
-        "mirrorchyan_rid": "MAAIP",
         {
             "name": "JP",
             "path": [
@@ -37,35 +36,5 @@
             "repeatable": true,
             "doc": "爬主塔不論成功失敗都算1次"
         }
-    ],
-    "option": {
-        "循環次數": {
-            "cases": [
-                {
-                    "name": "x1",
-                    "pipeline_override": {
-                        "UserSetSliderValue": {
-                            "enabled": true,
-                            "expected": "^1$"
-                        },
-                        "exitAutoSweepBattleTask": {
-                            "enabled": true
-                        }
-                    }
-                },
-                {
-                    "name": "x3",
-                    "pipeline_override": {
-                        "UserSetSliderValue": {
-                            "enabled": true,
-                            "expected": "^3$"
-                        },
-                        "exitAutoSweepBattleTask": {
-                            "enabled": true
-                        }
-                    }
-                }
-            ]
-        }
-    }
+    ]
 }

@@ -1,11 +1,9 @@
 <!-- markdownlint-disable MD033 MD041 -->
 <p align="center">
-  <img alt="LOGO" src="https://cdn.jsdelivr.net/gh/MaaAssistantArknights/design@main/logo/maa-logo_512x512.png" width="256" height="256" />
+  <img alt="LOGO" src="https://img2.arxlib.cc/logo.jpg" width="256" height="256" />
 </p>
 
 <div align="center">
-
-# MAAIP - 自動化助手
 
 </div>
 
@@ -23,7 +21,6 @@
 
 下載對應版本 + 執行即可使用
 
-
 ## FAQ
 
 ### 模擬器使用參考
@@ -34,8 +31,8 @@
 
 因為我是個FW萌新，歡迎有其他想法可以Fork自己動手搓搓看，很好玩的
 
-！
-
 ## 感謝
 
 本項目由 **[MaaFramework](https://github.com/MaaXYZ/MaaFramework)** 開發者們辛苦的技術支援
+
+<div>由<a href="https://www.designevo.com/tw/" title="免費的線上標誌製做器">DesignEvo</a>製作的標誌</div>

@@ -27,7 +27,8 @@
     "task": [
         {
             "name": "收訓練成果",
-            "entry": "Click_tap"
+            "entry": "Click_daily",
+            "doc": "收訓練成果"
         },
         {
             "name": "爬VENUS主塔",

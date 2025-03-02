@@ -1,0 +1,28 @@
+{
+    "clickGiftBox": {
+        "doc": "點禮物盒",
+        "recognition": "TemplateMatch",
+        "template": "giftbox.png",
+        "roi": [
+            622,
+            528,
+            95,
+            84
+        ],
+        "action": "Click",
+        "next": [
+            "getGift_all",
+            "to_home"
+        ]
+    },
+    "getGift_all": {
+        "doc": "點一括",
+        "recognition": "TemplateMatch",
+        "template": "giftall.png",
+        "action": "Click",
+        "next": [
+            "Click_x",
+            "to_home"
+        ]
+    }
+}

@@ -4,14 +4,8 @@
     },
     "task": [
         {
-            "name": "爬VENUS主塔",
-            "option": [
-                {
-                    "name": "循環次數",
-                    "value": "x3"
-                }
-            ],
-            "__vscExpand": true
+            "name": "收禮物盒",
+            "option": []
         }
     ],
     "adb": {

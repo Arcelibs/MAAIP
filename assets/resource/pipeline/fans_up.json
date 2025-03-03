@@ -1,0 +1,71 @@
+{
+    "do_work": {
+        "doc": "點仕事",
+        "recognition": "TemplateMatch",
+        "template": "Fans_Up\\work.png",
+        "action": "Click",
+        "next": [
+            "fans_present"
+        ]
+    },
+    "fans_present": {
+        "doc": "點粉絲比例增加",
+        "recognition": "TemplateMatch",
+        "template": "Fans_Up\\fans_percent.png",
+        "action": "Click",
+        "next": [
+            "fans_percent_akushukai"
+        ]
+    },
+    "fans_percent_akushukai": {
+        "doc": "預設使用握手會",
+        "recognition": "TemplateMatch",
+        "template": "Fans_Up\\fans_percent_akushukai.png",
+        "action": "Click",
+        "next": [
+            "auto_choose"
+        ]
+    },
+    "auto_choose": {
+        "doc": "自動選擇後點確定",
+        "recognition": "TemplateMatch",
+        "template": "Fans_Up\\auto_choose.png",
+        "action": "Click",
+        "next": [
+            "clickAgree_fans"
+        ]
+    },
+    "clickAgree_fans": {
+        "doc": "點確定",
+        "recognition": "TemplateMatch",
+        "template": "agree.png",
+        "action": "Click",
+        "next": [
+            "clickAgree_start"
+        ]
+    },
+    "clickAgree_start": {
+        "doc": "點開始",
+        "recognition": "TemplateMatch",
+        "template": "Fans_Up\\fans_start.png",
+        "action": "Click",
+        "next": [
+            "clickAgree_fans_back"
+        ]
+    },
+    "clickAgree_fans_back": {
+        "doc": "點返回",
+        "recognition": "TemplateMatch",
+        "template": "Fans_Up\\fans_back.png",
+        "action": "Click",
+        "next": [
+            "to_main"
+        ]
+    },
+    "to_main": {
+        "doc": "回到主畫面",
+        "recognition": "TemplateMatch",
+        "template": "Fans_Up\\to_main.png",
+        "action": "Click"
+    }
+}

@@ -3,15 +3,51 @@
         "doc": "點仕事",
         "recognition": "TemplateMatch",
         "template": "Fans_Up\\work.png",
+        "pre_delay": 2000,
+        "post_delay": 2000,
+        "roi": [
+            451,
+            1124,
+            105,
+            75
+        ],
         "action": "Click",
         "next": [
+            "if_end",
             "fans_present"
         ]
+    },
+    "if_end": {
+        "doc": "判斷之前的是否結束了",
+        "recognition": "TemplateMatch",
+        "template": "Fans_Up\\if_end.png",
+        "pre_delay": 2000,
+        "post_delay": 2000,
+        "roi": [
+            40,
+            848,
+            204,
+            214
+        ],
+        "action": "Click",
+        "next": [
+            "if_end_click"
+        ]
+    },
+    "if_end_click": {
+        "doc": "點確定",
+        "recognition": "TemplateMatch",
+        "template": "end.png",
+        "pre_delay": 2000,
+        "post_delay": 2000,
+        "action": "Click"
     },
     "fans_present": {
         "doc": "點粉絲比例增加",
         "recognition": "TemplateMatch",
         "template": "Fans_Up\\fans_percent.png",
+        "pre_delay": 2000,
+        "post_delay": 2000,
         "action": "Click",
         "next": [
             "fans_percent_akushukai"
@@ -20,6 +56,8 @@
     "fans_percent_akushukai": {
         "doc": "預設使用握手會",
         "recognition": "TemplateMatch",
+        "pre_delay": 2000,
+        "post_delay": 2000,
         "template": "Fans_Up\\fans_percent_akushukai.png",
         "action": "Click",
         "next": [
@@ -30,6 +68,8 @@
         "doc": "自動選擇後點確定",
         "recognition": "TemplateMatch",
         "template": "Fans_Up\\auto_choose.png",
+        "pre_delay": 2000,
+        "post_delay": 2000,
         "action": "Click",
         "next": [
             "clickAgree_fans"
@@ -39,6 +79,8 @@
         "doc": "點確定",
         "recognition": "TemplateMatch",
         "template": "agree.png",
+        "pre_delay": 2000,
+        "post_delay": 2000,
         "action": "Click",
         "next": [
             "clickAgree_start"
@@ -48,6 +90,8 @@
         "doc": "點開始",
         "recognition": "TemplateMatch",
         "template": "Fans_Up\\fans_start.png",
+        "pre_delay": 2000,
+        "post_delay": 2000,
         "action": "Click",
         "next": [
             "clickAgree_fans_back"
@@ -57,6 +101,8 @@
         "doc": "點返回",
         "recognition": "TemplateMatch",
         "template": "Fans_Up\\fans_back.png",
+        "pre_delay": 2000,
+        "post_delay": 2000,
         "action": "Click",
         "next": [
             "to_main"
@@ -66,6 +112,8 @@
         "doc": "回到主畫面",
         "recognition": "TemplateMatch",
         "template": "Fans_Up\\to_main.png",
+        "pre_delay": 2000,
+        "post_delay": 2000,
         "action": "Click"
     }
 }

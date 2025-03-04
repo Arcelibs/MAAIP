@@ -40,6 +40,11 @@
             "name": "收禮物盒",
             "entry": "clickGiftBox",
             "doc": "收禮物盒"
+        },
+        {
+            "name": "粉絲比例增加",
+            "entry": "do_work",
+            "doc": "點粉絲比例增加"
         }
     ]
 }

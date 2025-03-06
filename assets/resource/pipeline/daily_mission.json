@@ -138,7 +138,13 @@
         ],
         "action": "Click",
         "next": [
-            "回育成頁"
+            "回育成頁1"
         ]
+    },
+    "回育成頁1": {
+        "doc": "回育成頁",
+        "recognition": "TemplateMatch",
+        "template": "daily_mission\\回育成頁.png",
+        "action": "Click"
     }
 }

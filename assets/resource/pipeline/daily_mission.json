@@ -15,7 +15,7 @@
         ]
     },
     "角色強化": {
-        "doc": "Level up",
+        "doc": "點強化按鈕",
         "recognition": "OCR",
         "expected": "強化",
         "action": "Click"

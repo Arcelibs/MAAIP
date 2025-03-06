@@ -1,0 +1,79 @@
+{
+    "點飾品強化": {
+        "doc": "點飾品強化",
+        "recognition": "TemplateMatch",
+        "template": "daily_mission\\飾品強化.png",
+        "action": "Click",
+        "next": [
+            "選擇合成"
+        ]
+    },
+    "選擇合成": {
+        "doc": "選擇合成",
+        "recognition": "OCR",
+        "expected": "合成",
+        "action": "Click",
+        "next": [
+            "左往右拉"
+        ]
+    },
+    "左往右拉": {
+        "doc": "左往右拉",
+        "recognition": "DirectHit",
+        "action": "Swipe",
+        "begin": [
+            61,
+            655,
+            1,
+            1
+        ],
+        "end": [
+            647,
+            651,
+            1,
+            1
+        ],
+        "next": [
+            "點飾品"
+        ]
+    },
+    "點飾品": {
+        "doc": "點飾品",
+        "recognition": "TemplateMatch",
+        "template": "daily_mission\\飾品.png",
+        "action": "Click",
+        "next": [
+            "確認點合成"
+        ]
+    },
+    "確認點合成": {
+        "doc": "確認點合成",
+        "recognition": "TemplateMatch",
+        "template": "daily_mission\\合成.png",
+        "action": "Click",
+        "next": [
+            "點X"
+        ]
+    },
+    "點X": {
+        "doc": "點X",
+        "recognition": "TemplateMatch",
+        "template": "daily_mission\\X.png",
+        "roi": [
+            332,
+            1166,
+            56,
+            65
+        ],
+        "action": "Click",
+        "next": [
+            "回育成頁1"
+        ]
+    },
+    "回育成頁1": {
+        "doc": "回育成頁",
+        "recognition": "TemplateMatch",
+        "template": "daily_mission\\回育成頁.png",
+        "action": "Click"
+    }
+}

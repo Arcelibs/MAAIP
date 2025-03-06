@@ -1,6 +1,6 @@
 {
-    "check_daily_mission": {
-        "doc": "開始做每日任務",
+    "check_daily_mission_levelup": {
+        "doc": "開始做角色強化",
         "next": [
             "go育成"
         ]

@@ -9,6 +9,15 @@
         "doc": "Level up",
         "recognition": "OCR",
         "expected": "育成",
+        "action": "Click",
+        "next": [
+            "角色強化"
+        ]
+    },
+    "角色強化": {
+        "doc": "Level up",
+        "recognition": "OCR",
+        "expected": "強化",
         "action": "Click"
     }
 }

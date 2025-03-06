@@ -1,0 +1,15 @@
+{
+    "check_daily_mission": {
+        "doc": "開始做每日任務",
+        "next": [
+            "go育成"
+        ]
+    },
+    "go育成": {
+        "doc": "Level up",
+        "recognition": "OCR",
+        "expected": "育成",
+        "action": "Click",
+        "next": []
+    },
+}

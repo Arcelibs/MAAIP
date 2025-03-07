@@ -1,0 +1,121 @@
+{
+    "點練習": {
+        "recognition": "TemplateMatch",
+        "template": "daily_mission\\performance.png",
+        "pre_delay": 2000,
+        "post_delay": 2000,
+        "action": "Click",
+        "next": [
+            "副本"
+        ]
+    },
+    "副本": {
+        "recognition": "TemplateMatch",
+        "template": "daily_mission\\副本.png",
+        "pre_delay": 2000,
+        "post_delay": 2000,
+        "action": "Click",
+        "next": [
+            "賺錢副本"
+        ]
+    },
+    "賺錢副本": {
+        "recognition": "TemplateMatch",
+        "template": "daily_mission\\賺錢副本.png",
+        "pre_delay": 2000,
+        "post_delay": 2000,
+        "action": "Click",
+        "next": [
+            "STAGE14"
+        ]
+    },
+    "STAGE14": {
+        "recognition": "OCR",
+        "expected": "STAGE14",
+        "pre_delay": 2000,
+        "post_delay": 2000,
+        "action": "Click",
+        "next": [
+            "autoteam"
+        ]
+    },
+    "autoteam": {
+        "recognition": "TemplateMatch",
+        "template": "daily_mission\\autoteam.png",
+        "pre_delay": 2000,
+        "post_delay": 2000,
+        "action": "Click",
+        "next": [
+            "開始"
+        ]
+    },
+    "開始": {
+        "recognition": "TemplateMatch",
+        "template": "daily_mission\\start.png",
+        "pre_delay": 2000,
+        "post_delay": 2000,
+        "action": "Click",
+        "next": [
+            "消費確認"
+        ]
+    },
+    "消費確認": {
+        "recognition": "TemplateMatch",
+        "template": "daily_mission\\消費確認.png",
+        "pre_delay": 2000,
+        "post_delay": 2000,
+        "action": "Click",
+        "interrupt": [
+            "stack_daem"
+        ],
+        "next": [
+            "download_check",
+            "next_toend_daem"
+        ]
+    },
+    "download_check_daem": {
+        "doc": "如果要下載就確認",
+        "recognition": "TemplateMatch",
+        "template": "download_check.png",
+        "pre_delay": 2000,
+        "post_delay": 2000,
+        "action": "Click",
+        "interrupt": [
+            "stack_daem"
+        ],
+        "next": [
+            "next_toend_daem"
+        ]
+    },
+    "stack_daem": {
+        "post_delay": 1000
+    },
+    "next_toend_daem": {
+        "doc": "點擊NEXT提示",
+        "recognition": "TemplateMatch",
+        "template": "next.png",
+        "pre_delay": 2000,
+        "post_delay": 2000,
+        "action": "Click",
+        "next": [
+            "終了"
+        ]
+    },
+    "終了": {
+        "recognition": "TemplateMatch",
+        "template": "daily_mission\\end.png",
+        "pre_delay": 2000,
+        "post_delay": 2000,
+        "action": "Click",
+        "next": [
+            "回首頁_deam"
+        ]
+    },
+    "回首頁_deam": {
+        "recognition": "TemplateMatch",
+        "template": "daily_mission\\home.png",
+        "pre_delay": 2000,
+        "post_delay": 2000,
+        "action": "Click"
+    }
+}

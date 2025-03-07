@@ -1,8 +1,21 @@
 {
+    "go育成1": {
+        "doc": "Level up",
+        "recognition": "OCR",
+        "expected": "育成",
+        "pre_delay": 2000,
+        "post_delay": 2000,
+        "action": "Click",
+        "next": [
+            "點飾品強化"
+        ]
+    },
     "點飾品強化": {
         "doc": "點飾品強化",
         "recognition": "TemplateMatch",
         "template": "daily_mission\\飾品強化.png",
+        "pre_delay": 2000,
+        "post_delay": 2000,
         "action": "Click",
         "next": [
             "選擇合成"
@@ -12,6 +25,8 @@
         "doc": "選擇合成",
         "recognition": "OCR",
         "expected": "合成",
+        "pre_delay": 2000,
+        "post_delay": 2000,
         "action": "Click",
         "next": [
             "左往右拉"
@@ -20,6 +35,8 @@
     "左往右拉": {
         "doc": "左往右拉",
         "recognition": "DirectHit",
+        "pre_delay": 2000,
+        "post_delay": 2000,
         "action": "Swipe",
         "begin": [
             61,
@@ -41,6 +58,8 @@
         "doc": "點飾品",
         "recognition": "TemplateMatch",
         "template": "daily_mission\\飾品.png",
+        "pre_delay": 2000,
+        "post_delay": 2000,
         "action": "Click",
         "next": [
             "確認點合成"
@@ -50,6 +69,8 @@
         "doc": "確認點合成",
         "recognition": "TemplateMatch",
         "template": "daily_mission\\合成.png",
+        "pre_delay": 2000,
+        "post_delay": 2000,
         "action": "Click",
         "next": [
             "點X"
@@ -59,6 +80,8 @@
         "doc": "點X",
         "recognition": "TemplateMatch",
         "template": "daily_mission\\X.png",
+        "pre_delay": 2000,
+        "post_delay": 2000,
         "roi": [
             332,
             1166,
@@ -74,6 +97,8 @@
         "doc": "回育成頁",
         "recognition": "TemplateMatch",
         "template": "daily_mission\\回育成頁.png",
+        "pre_delay": 2000,
+        "post_delay": 2000,
         "action": "Click"
     }
 }

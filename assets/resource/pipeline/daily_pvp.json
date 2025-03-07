@@ -1,0 +1,95 @@
+{
+    "點練習_pvp": {
+        "recognition": "TemplateMatch",
+        "template": "daily_mission\\performance.png",
+        "pre_delay": 2000,
+        "post_delay": 2000,
+        "action": "Click",
+        "next": [
+            "點PVP"
+        ]
+    },
+    "點PVP": {
+        "recognition": "TemplateMatch",
+        "template": "daily_mission\\PVP.png",
+        "pre_delay": 2000,
+        "post_delay": 2000,
+        "action": "Click",
+        "next": [
+            "預設選擇第一隊"
+        ]
+    },
+    "預設選擇第一隊": {
+        "recognition": "DirectHit",
+        "roi": [
+            68,
+            777,
+            587,
+            144
+        ],
+        "target": [
+            68,
+            777,
+            587,
+            144
+        ],
+        "pre_delay": 5000,
+        "post_delay": 5000,
+        "action": "Click",
+        "next": [
+            "自動編成_pvp"
+        ]
+    },
+    "自動編成_pvp": {
+        "recognition": "TemplateMatch",
+        "template": "daily_mission\\autoteam.png",
+        "pre_delay": 3000,
+        "post_delay": 3000,
+        "action": "Click",
+        "next": [
+            "開始_pvp"
+        ]
+    },
+    "開始_pvp": {
+        "recognition": "TemplateMatch",
+        "template": "daily_mission\\start.png",
+        "pre_delay": 2000,
+        "post_delay": 2000,
+        "action": "Click",
+        "interrupt": [
+            "stack_pvp"
+        ],
+        "next": [
+            "download_check_pvp",
+            "next_toend_pvp"
+        ]
+    },
+    "download_check_pvp": {
+        "doc": "如果要下載就確認",
+        "recognition": "TemplateMatch",
+        "template": "download_check.png",
+        "pre_delay": 2000,
+        "post_delay": 2000,
+        "action": "Click",
+        "interrupt": [
+            "stack_pvp"
+        ],
+        "next": [
+            "next_toend_pvp"
+        ]
+    },
+    "stack_pvp": {
+        "post_delay": 1000
+    },
+    "next_toend_pvp": {
+        "doc": "點擊NEXT提示",
+        "recognition": "TemplateMatch",
+        "template": "next.png",
+        "pre_delay": 2000,
+        "post_delay": 2000,
+        "action": "Click",
+        "next": [
+            "終了"
+        ]
+    }
+}

@@ -69,7 +69,7 @@
             "stack_daem"
         ],
         "next": [
-            "download_check",
+            "download_check_daem",
             "next_toend_daem"
         ]
     },

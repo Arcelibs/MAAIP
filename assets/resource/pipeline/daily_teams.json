@@ -1,0 +1,29 @@
+{
+    "點練習_teams": {
+        "recognition": "TemplateMatch",
+        "template": "daily_mission\\performance.png",
+        "pre_delay": 2000,
+        "post_delay": 2000,
+        "action": "Click",
+        "next": [
+            "點團體戰"
+        ]
+    },
+    "點團體戰": {
+        "recognition": "TemplateMatch",
+        "template": "daily_mission\\團體戰.png",
+        "pre_delay": 2000,
+        "post_delay": 2000,
+        "action": "Click",
+        "next": [
+            "回首頁_teams"
+        ]
+    },
+    "回首頁_teams": {
+        "recognition": "TemplateMatch",
+        "template": "daily_mission\\home.png",
+        "pre_delay": 2000,
+        "post_delay": 2000,
+        "action": "Click"
+    }
+}

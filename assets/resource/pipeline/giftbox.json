@@ -21,7 +21,15 @@
         "template": "giftall.png",
         "action": "Click",
         "next": [
-            "Click_x",
+            "exit_gift"
+        ]
+    },
+    "exit_gift": {
+        "doc": "點返回",
+        "recognition": "TemplateMatch",
+        "template": "x.png",
+        "action": "Click",
+        "next": [
             "to_home"
         ]
     }

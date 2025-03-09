@@ -2,7 +2,36 @@
     "controller": {
         "name": "安卓端"
     },
-    "task": [],
+    "task": [
+        {
+            "name": "每日任務-升級一次",
+            "option": []
+        },
+        {
+            "name": "每日任務-飾品強化一次",
+            "option": []
+        },
+        {
+            "name": "每日任務-賺錢一次",
+            "option": []
+        },
+        {
+            "name": "每日任務-PVP一次",
+            "option": []
+        },
+        {
+            "name": "每日任務-參加團隊戰一次",
+            "option": []
+        },
+        {
+            "name": "收訓練成果",
+            "option": []
+        },
+        {
+            "name": "收禮物盒",
+            "option": []
+        }
+    ],
     "adb": {
         "adb_path": "C:/Program Files/Netease/MuMu Player 12/shell/adb.exe",
         "address": "127.0.0.1:16448",

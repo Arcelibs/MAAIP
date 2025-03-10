@@ -1,0 +1,14 @@
+{
+    "test1": {
+        "recognition": "TemplateMatch",
+        "template": "giftbox.png",
+        "action": "Click",
+        "next": [
+            "longPress"
+        ]
+    },
+    "longPress": {
+        "action": "Custom",
+        "custom_action": "LongPress"
+    }
+}

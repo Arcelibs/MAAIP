@@ -3,5 +3,10 @@
         "type": "action",
         "class": "Count",
         "file_path": "{custom_path}\\action\\Count.py"
+    },
+    "LongPress": {
+        "type": "action",
+        "class": "LongPress",
+        "file_path": "{custom_path}\\action\\LongPress.py"
     }
 }

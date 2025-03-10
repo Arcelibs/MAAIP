@@ -1,9 +1,7 @@
 from maa.agent.agent_server import AgentServer
 
+from action.longpress import LongPress
 
-from action.Count import Count
-
-
-@AgentServer.custom_action("Count")
-class Agent_Count(Count):
+@AgentServer.custom_action("LongPress")
+class Agent_LongPress(LongPress):
     pass

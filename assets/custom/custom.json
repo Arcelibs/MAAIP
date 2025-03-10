@@ -1,0 +1,7 @@
+{
+    "Count": {
+        "type": "action",
+        "class": "Count",
+        "file_path": "{custom_path}\\action\\Count.py"
+    }
+}

@@ -71,6 +71,10 @@
             "name": "每日任務-參加團隊戰一次",
             "entry": "點練習_teams",
             "doc": "每日五項任務"
+        },
+        {
+            "name": "測試Custom",
+            "entry": "test1",
         }
     ]
 }

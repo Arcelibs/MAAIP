@@ -3,6 +3,8 @@
         "doc": "點禮物盒",
         "recognition": "TemplateMatch",
         "template": "giftbox.png",
+        "pre_delay": 2000,
+        "post_delay": 2000,
         "roi": [
             622,
             528,
@@ -18,6 +20,8 @@
     "getGift_all": {
         "doc": "點一括",
         "recognition": "TemplateMatch",
+        "pre_delay": 2000,
+        "post_delay": 2000,
         "template": "giftall.png",
         "action": "Click",
         "next": [

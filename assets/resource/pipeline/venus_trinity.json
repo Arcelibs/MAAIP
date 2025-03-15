@@ -1,0 +1,124 @@
+{
+    "clickPerformance_venus_trinity": {
+        "doc": "點擊performance",
+        "recognition": "TemplateMatch",
+        "template": "performance.png",
+        "action": "Click",
+        "pre_delay": 2000,
+        "post_delay": 2000,
+        "next": "clickVenusTower_venus_trinity"
+    },
+    "clickVenusTower_venus_trinity": {
+        "doc": "點擊venus_tower",
+        "recognition": "TemplateMatch",
+        "template": "venus_tower.png",
+        "action": "Click",
+        "pre_delay": 2000,
+        "post_delay": 2000,
+        "next": [
+            "clickVenusMain_venus_trinity"
+        ]
+    },
+    "clickVenusMain_venus_trinity": {
+        "doc": "點擊venus_main",
+        "recognition": "TemplateMatch",
+        "template": "venus_trinity.png",
+        "roi": [
+            366,
+            754,
+            147,
+            179
+        ],
+        "action": "Click",
+        "pre_delay": 2000,
+        "post_delay": 2000,
+        "next": [
+            "clickAgree_venus_trinity"
+        ]
+    },
+    "clickAgree_venus_trinity": {
+        "doc": "點擊確定",
+        "recognition": "TemplateMatch",
+        "template": "agree.png",
+        "action": "Click",
+        "pre_delay": 2000,
+        "post_delay": 2000,
+        "next": [
+            "checkAutoteam_venus_trinity",
+            "start_venus_main_venus_trinity"
+        ]
+    },
+    "checkAutoteam_venus_trinity": {
+        "doc": "使用自動組隊功能",
+        "recognition": "TemplateMatch",
+        "template": "autoteam.png",
+        "action": "Click",
+        "pre_delay": 2000,
+        "post_delay": 2000,
+        "next": [
+            "start_venus_main_venus_trinity"
+        ]
+    },
+    "start_venus_main_venus_trinity": {
+        "doc": "點擊開始",
+        "recognition": "TemplateMatch",
+        "template": "start.png",
+        "pre_delay": 2000,
+        "post_delay": 2000,
+        "action": "Click",
+        "interrupt": [
+            "stack1_venus_trinity"
+        ],
+        "next": [
+            "download_check_venus_trinity",
+            "next_toend_venus_trinity"
+        ]
+    },
+    "download_check_venus_trinity": {
+        "doc": "如果要下載就確認",
+        "recognition": "TemplateMatch",
+        "template": "download_check.png",
+        "pre_delay": 2000,
+        "post_delay": 2000,
+        "action": "Click",
+        "interrupt": [
+            "stack1_venus_trinity"
+        ],
+        "next": [
+            "next_toend_venus_trinity"
+        ]
+    },
+    "stack1_venus_trinity": {
+        "post_delay": 1000
+    },
+    "next_toend_venus_trinity": {
+        "doc": "點擊NEXT提示",
+        "recognition": "TemplateMatch",
+        "template": "next.png",
+        "pre_delay": 2000,
+        "post_delay": 2000,
+        "action": "Click",
+        "next": [
+            "x_toend_venus_trinity"
+        ]
+    },
+    "x_toend_venus_trinity": {
+        "doc": "點擊終了",
+        "recognition": "TemplateMatch",
+        "template": "end.png",
+        "pre_delay": 500,
+        "post_delay": 500,
+        "action": "Click",
+        "next": [
+            "to_home_venus_trinity"
+        ]
+    },
+    "to_home_venus_trinity": {
+        "doc": "回到主畫面",
+        "recognition": "TemplateMatch",
+        "template": "home.png",
+        "pre_delay": 1000,
+        "post_delay": 1000,
+        "action": "Click"
+    }
+}

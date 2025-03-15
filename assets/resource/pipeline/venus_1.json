@@ -1,8 +1,0 @@
-{
-    "venus左一塔": {
-        "recognition": "Custom",
-        "custom_recognition": "my_reco_venus_1",
-        "action": "Custom",
-        "custom_action": "my_action_venus_1"
-    }
-}

@@ -73,8 +73,16 @@
             "doc": "每日五項任務"
         },
         {
-            "name": "測試Custom",
-            "entry": "test1"
+            "name": "爬VENUS月塔",
+            "entry": "clickPerformance_venus_1"
+        },
+        {
+            "name": "爬VENUS日塔",
+            "entry": "clickPerformance_venus_sun"
+        },
+        {
+            "name": "爬VENUS三角塔",
+            "entry": "clickPerformance_venus_trinity"
         }
     ]
 }
